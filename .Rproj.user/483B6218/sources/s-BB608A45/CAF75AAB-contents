@@ -3,7 +3,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://richardmichaelsmith.com/"
+baseurl = "https://www.richardmichaelsmith.com/"
 # publishDir = ""
 
 # Title of your site
