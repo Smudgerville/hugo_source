@@ -1,0 +1,70 @@
+---
+title: "2018 Goals"
+author: "Richard M. Smith"
+date: "2/10/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overall Goals
+
+- Leave LG&E
+- Move
+- Work towards financial independence
+  - Savings plan
+
+## Personal
+
+- Savings & financial plan
+- Woodworking skills & techniques
+
+## Home
+
+- Requirements to sell house & move
+
+## Work / Skills
+
+
+### Make the most of resources in current role
+
+- Datacamp courses
+- SQL Server & Visual Studio
+  - Microsoft R implementation
+- SAS + Enterprise Guide
+- ArcPro
+- MetixND
+- MetrixLT
+
+Gen Planning Tools?
+
+- Aurora
+- Prosym?
+
+### Other
+
+- Python
+- Powershell
+- D3
+- OAuth / SSH? - required for SAAS?
+
+### Longer term / Fun
+
+- FirstBuild / Lvl1
+
+- AI / Deep Learning
+  - Keras / Tensorflow
+  - Graph Databases
+
+## Projects
+
+- Energy Planning / Forecasting Book
+- Start a business - just to see how to do it
+- Education write-up & analysis - defining education
+- Utlity Analysis R package
+- FERC / Rate Case data collection
+- Personal Analysis - integrating data sources
+- Raspberry Pi
+  - Router + Smarthome

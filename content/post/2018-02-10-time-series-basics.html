@@ -1,0 +1,37 @@
+---
+title: Time Series Basics
+author: ~
+date: '2018-02-10'
+draft: true
+slug: time-series-basics
+categories: []
+tags: []
+---
+
+
+
+<p>Test to see if this is a draft.</p>
+<p>Auto-regressive models. A hand-on understanding.</p>
+<pre class="r"><code>ar</code></pre>
+<pre><code>## function (x, aic = TRUE, order.max = NULL, method = c(&quot;yule-walker&quot;, 
+##     &quot;burg&quot;, &quot;ols&quot;, &quot;mle&quot;, &quot;yw&quot;), na.action = na.fail, series = deparse(substitute(x)), 
+##     ...) 
+## {
+##     res &lt;- switch(match.arg(method), yw = , `yule-walker` = ar.yw(x, 
+##         aic = aic, order.max = order.max, na.action = na.action, 
+##         series = series, ...), burg = ar.burg(x, aic = aic, order.max = order.max, 
+##         na.action = na.action, series = series, ...), ols = ar.ols(x, 
+##         aic = aic, order.max = order.max, na.action = na.action, 
+##         series = series, ...), mle = ar.mle(x, aic = aic, order.max = order.max, 
+##         na.action = na.action, series = series, ...))
+##     res$call &lt;- match.call()
+##     res
+## }
+## &lt;bytecode: 0x7fe76bf12350&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<p>Methods of autoregressive models</p>
+<p><code>yule-walker</code></p>
+<p><code>burg</code></p>
+<p><code>ols</code></p>
+<p><code>mle</code></p>
+<p><code>yw</code></p>

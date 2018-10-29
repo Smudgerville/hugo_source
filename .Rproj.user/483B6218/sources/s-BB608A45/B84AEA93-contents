@@ -1,0 +1,24 @@
+---
+title: "Welcome!"
+author: "Richard M. Smith"
+date: 2018-02-06T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "General"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Welcome
+
+This is my github hosted static site.
+
+The goal is to share resources and learning publicly.  
+
+Highlight [David Robinson](https://twitter.com/drob) [post](http://varianceexplained.org/r/start-blog/)
+
+After teaching, made me realize that sharing publicly holds me to a higher standard.
+
+Areas mainly focused on statistical analysis & forecasting with R.  
+

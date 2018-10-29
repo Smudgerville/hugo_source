@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Richard M. Smith, CPA, CFA</title>
+    <link>https://smudgerville.github.io/post/</link>
+    <description>Recent content in Posts on Richard M. Smith, CPA, CFA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started with Hugo &amp; R</title>
+      <link>https://smudgerville.github.io/post/2018-02-07-getting-started-with-hugo/</link>
+      <pubDate>Wed, 07 Feb 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://smudgerville.github.io/post/2018-02-07-getting-started-with-hugo/</guid>
+      <description>&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The aim of this post is to describe how to get up and running with a static site using &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;Blogdown&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. All of these tools make it fantastically easy to build a quality website quickly and easily.&lt;/p&gt;
+&lt;p&gt;We will use two git repositories, one to build the site and another to publish in a format that allows the site to be statically hosted with github pages.&lt;/p&gt;
+&lt;div id=&#34;understanding-the-tools&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Understanding the Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Blogdown:&lt;/strong&gt; An open-source (GPL-3) R package to generate static websites based on R Markdown and Hugo.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hugo:&lt;/strong&gt; &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is an open-source static site generator.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;R Studio:&lt;/strong&gt; &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;R Studio&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Github Pages:&lt;/strong&gt; Free hosting for your static site direct from your github repository.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instructions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Instructions&lt;/h2&gt;
+&lt;div id=&#34;prerequisites-dependencies&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Prerequisites &amp;amp; Dependencies&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A Github account. Sign up at &lt;a href=&#34;https://github.com/&#34; class=&#34;uri&#34;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;ol start=&#34;18&#34; style=&#34;list-style-type: upper-alpha&#34;&gt;
+&lt;li&gt;Download from &lt;a href=&#34;https://cran.r-project.org/&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;R Studio. Download from &lt;a href=&#34;https://www.rstudio.com/products/rstudio/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;step-by-step&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Step By Step&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Initialize a github repo. This must be empty to start a new blogdown site.&lt;/li&gt;
+&lt;li&gt;Open terminal at location&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git clone &amp;lt;repo name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete anything if for some reason it isn’t blank.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Set up repo for github.io static site&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;username.github.io&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If for example your github username was &lt;em&gt;krieger&lt;/em&gt;, your repo would need to be &lt;em&gt;krieger.github.io&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Clone your newly created &lt;em&gt;username.github.io&lt;/em&gt; site&lt;/li&gt;
+&lt;li&gt;Open R Studio, install blogdown &amp;amp; hugo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;install.packages(&amp;quot;blogdown&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Start an R Studio Project in the folder of the first repo you cloned locally (&lt;strong&gt;not&lt;/strong&gt; the .github.io one)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;To use a theme other than the defaul one, check out some of the resources here: &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;I chose the Academic theme which comes with specific instructions to &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34;&gt;install with R Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I also created with sample blog posts for hints on syntax &amp;amp; then deleted these later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;8&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Edit config.toml&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Add: &lt;code&gt;publishDir = &amp;quot;&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Change the path for you &lt;code&gt;publishDir&lt;/code&gt; variable to the locally cloned .github.io repo. This should be an absolute path or relative to the config.toml file the variable is included in.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;This variable publishes the static site contents to the .gihub.io repo so github static host it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;blogdown::new_post(title = &amp;quot;Welcome to my site&amp;quot;, ext = &amp;quot;.Rmd&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;9&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;With the Academic theme, I had to remove &lt;code&gt;hero.md&lt;/code&gt; from the following location: blogdown &amp;gt; Content &amp;gt; Home&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;This was the theme resources and description that loads at the top of your site otherwise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references-further-reading&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;References &amp;amp; Further Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tclavelle.github.io/blog/blogdown_github/&#34;&gt;Excellent write-up from Tyler Clavelle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;session-info&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Info&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::session_info()
+## Session info -------------------------------------------------------------
+##  setting  value                       
+##  version  R version 3.4.3 (2017-11-30)
+##  system   x86_64, darwin15.6.0        
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  tz       America/New_York            
+##  date     2018-10-28
+## Packages -----------------------------------------------------------------
+##  package   * version date       source        
+##  backports   1.1.2   2017-12-13 CRAN (R 3.4.3)
+##  base      * 3.4.3   2017-12-07 local         
+##  blogdown    0.4     2017-12-12 CRAN (R 3.4.3)
+##  bookdown    0.5     2017-08-20 CRAN (R 3.4.1)
+##  compiler    3.4.3   2017-12-07 local         
+##  datasets  * 3.4.3   2017-12-07 local         
+##  devtools    1.13.4  2017-11-09 CRAN (R 3.4.2)
+##  digest      0.6.13  2017-12-14 CRAN (R 3.4.3)
+##  evaluate    0.10.1  2017-06-24 CRAN (R 3.4.1)
+##  graphics  * 3.4.3   2017-12-07 local         
+##  grDevices * 3.4.3   2017-12-07 local         
+##  htmltools   0.3.6   2017-04-28 CRAN (R 3.4.0)
+##  knitr       1.17    2017-08-10 CRAN (R 3.4.1)
+##  magrittr    1.5     2014-11-22 CRAN (R 3.4.0)
+##  memoise     1.1.0   2017-04-21 CRAN (R 3.4.0)
+##  methods   * 3.4.3   2017-12-07 local         
+##  Rcpp        0.12.14 2017-11-23 CRAN (R 3.4.3)
+##  rmarkdown   1.8     2017-11-17 CRAN (R 3.4.2)
+##  rprojroot   1.3-1   2017-12-18 CRAN (R 3.4.3)
+##  stats     * 3.4.3   2017-12-07 local         
+##  stringi     1.1.6   2017-11-17 CRAN (R 3.4.2)
+##  stringr     1.2.0   2017-02-18 CRAN (R 3.4.0)
+##  tools       3.4.3   2017-12-07 local         
+##  utils     * 3.4.3   2017-12-07 local         
+##  withr       2.1.1   2017-12-19 CRAN (R 3.4.3)
+##  yaml        2.1.16  2017-12-12 CRAN (R 3.4.3)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome!</title>
+      <link>https://smudgerville.github.io/post/2018-02-06-welcome/</link>
+      <pubDate>Tue, 06 Feb 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://smudgerville.github.io/post/2018-02-06-welcome/</guid>
+      <description>&lt;div id=&#34;welcome&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;This is my github hosted static site.&lt;/p&gt;
+&lt;p&gt;The goal is to share resources and learning publicly.&lt;/p&gt;
+&lt;p&gt;Highlight &lt;a href=&#34;https://twitter.com/drob&#34;&gt;David Robinson&lt;/a&gt; &lt;a href=&#34;http://varianceexplained.org/r/start-blog/&#34;&gt;post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After teaching, made me realize that sharing publicly holds me to a higher standard.&lt;/p&gt;
+&lt;p&gt;Areas mainly focused on statistical analysis &amp;amp; forecasting with R.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

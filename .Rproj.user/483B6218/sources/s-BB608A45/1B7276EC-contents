@@ -1,0 +1,81 @@
+---
+title: "Getting Started with Hugo & R"
+author: "Richard M. Smith"
+date: 2018-02-07T21:13:14-05:00
+categories: ["R", "Web"]
+tags: ["R Markdown", "General", "Hugo", "Blogdown", "Github Pages", "R Studio"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Overview
+
+The aim of this post is to describe how to get up and running with a static site using [Blogdown](https://github.com/rstudio/blogdown) and [Github Pages](https://pages.github.com/).  All of these tools make it fantastically easy to build a quality website quickly and easily.
+
+We will use two git repositories, one to build the site and another to publish in a format that allows the site to be statically hosted with github pages.
+
+### Understanding the Tools
+
+- **Blogdown:** An open-source (GPL-3) R package to generate static websites based on R Markdown and Hugo.
+
+  - **Hugo:**  [Hugo](https://gohugo.io/) is an open-source static site generator.
+
+  - **R Studio:**  [R Studio](https://www.rstudio.com/)
+
+- **Github Pages:**  Free hosting for your static site direct from your github repository.
+
+
+## Instructions
+
+### Prerequisites & Dependencies
+
+- A Github account.  Sign up at https://github.com/
+- R.  Download from https://cran.r-project.org/
+- R Studio.  Download from https://www.rstudio.com/products/rstudio/
+
+###  Step By Step
+
+1.  Initialize a github repo.  This must be empty to start a new blogdown site.
+2.  Open terminal at location
+3.  `git clone <repo name>`
+  - Delete anything if for some reason it isn't blank.
+4.  Set up repo for github.io static site
+
+**username.github.io**
+
+If for example your github username was *krieger*, your repo would need to be *krieger.github.io*
+
+5.  Clone your newly created *username.github.io* site
+6.  Open R Studio, install blogdown & hugo:
+
+`install.packages("blogdown")`
+
+`blogdown::install_hugo()`
+
+7.  Start an R Studio Project in the folder of the first repo you cloned locally (**not** the .github.io one)
+  - To use a theme other than the defaul one, check out some of the resources here:  [Hugo Themes](https://themes.gohugo.io/).  
+  - I chose the Academic theme which comes with specific instructions to [install with R Studio](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
+  - I also created with sample blog posts for hints on syntax & then deleted these later
+8.  Edit config.toml
+  - Add: `publishDir = ""`
+  - Change the path for you `publishDir` variable to the locally cloned .github.io repo.  This should be an absolute path or relative to the config.toml file the variable is included in.  
+  - This variable publishes the static site contents to the .gihub.io repo so github static host it.  
+
+`blogdown::new_post(title = "Welcome to my site", ext = ".Rmd")`
+
+9.  With the Academic theme, I had to remove `hero.md` from the following location: blogdown > Content > Home
+  - This was the theme resources and description that loads at the top of your site otherwise.
+
+## References & Further Reading
+
+- [Excellent write-up from Tyler Clavelle](https://tclavelle.github.io/blog/blogdown_github/)
+
+## Session Info
+
+```{r}
+devtools::session_info()
+```
+
+

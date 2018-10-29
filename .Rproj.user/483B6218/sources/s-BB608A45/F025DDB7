@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518283402883.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F025DDB7",
+    "lastKnownWriteTime" : 1518283820,
+    "last_content_update" : 1518283820835,
+    "path" : "/Volumes/RMS/Website/hugo_source/Hugo_Site/content/post/2018-02-10-time-series-basics.Rmd",
+    "project_path" : "content/post/2018-02-10-time-series-basics.Rmd",
+    "properties" : {
+        "cursorPosition" : "4,11",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

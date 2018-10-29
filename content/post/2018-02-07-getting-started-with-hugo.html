@@ -1,0 +1,131 @@
+---
+title: "Getting Started with Hugo & R"
+author: "Richard M. Smith"
+date: 2018-02-07T21:13:14-05:00
+categories: ["R", "Web"]
+tags: ["R Markdown", "General", "Hugo", "Blogdown", "Github Pages", "R Studio"]
+---
+
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>The aim of this post is to describe how to get up and running with a static site using <a href="https://github.com/rstudio/blogdown">Blogdown</a> and <a href="https://pages.github.com/">Github Pages</a>. All of these tools make it fantastically easy to build a quality website quickly and easily.</p>
+<p>We will use two git repositories, one to build the site and another to publish in a format that allows the site to be statically hosted with github pages.</p>
+<div id="understanding-the-tools" class="section level3">
+<h3>Understanding the Tools</h3>
+<ul>
+<li><p><strong>Blogdown:</strong> An open-source (GPL-3) R package to generate static websites based on R Markdown and Hugo.</p></li>
+<li><p><strong>Hugo:</strong> <a href="https://gohugo.io/">Hugo</a> is an open-source static site generator.</p></li>
+<li><p><strong>R Studio:</strong> <a href="https://www.rstudio.com/">R Studio</a></p></li>
+<li><p><strong>Github Pages:</strong> Free hosting for your static site direct from your github repository.</p></li>
+</ul>
+</div>
+</div>
+<div id="instructions" class="section level2">
+<h2>Instructions</h2>
+<div id="prerequisites-dependencies" class="section level3">
+<h3>Prerequisites &amp; Dependencies</h3>
+<ul>
+<li>A Github account. Sign up at <a href="https://github.com/" class="uri">https://github.com/</a></li>
+<li><ol start="18" style="list-style-type: upper-alpha">
+<li>Download from <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a></li>
+</ol></li>
+<li>R Studio. Download from <a href="https://www.rstudio.com/products/rstudio/" class="uri">https://www.rstudio.com/products/rstudio/</a></li>
+</ul>
+</div>
+<div id="step-by-step" class="section level3">
+<h3>Step By Step</h3>
+<ol style="list-style-type: decimal">
+<li>Initialize a github repo. This must be empty to start a new blogdown site.</li>
+<li>Open terminal at location</li>
+<li><code>git clone &lt;repo name&gt;</code></li>
+</ol>
+<ul>
+<li>Delete anything if for some reason it isn’t blank.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Set up repo for github.io static site</li>
+</ol>
+<p><strong>username.github.io</strong></p>
+<p>If for example your github username was <em>krieger</em>, your repo would need to be <em>krieger.github.io</em></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Clone your newly created <em>username.github.io</em> site</li>
+<li>Open R Studio, install blogdown &amp; hugo:</li>
+</ol>
+<p><code>install.packages(&quot;blogdown&quot;)</code></p>
+<p><code>blogdown::install_hugo()</code></p>
+<ol start="7" style="list-style-type: decimal">
+<li>Start an R Studio Project in the folder of the first repo you cloned locally (<strong>not</strong> the .github.io one)</li>
+</ol>
+<ul>
+<li>To use a theme other than the defaul one, check out some of the resources here: <a href="https://themes.gohugo.io/">Hugo Themes</a>.<br />
+</li>
+<li>I chose the Academic theme which comes with specific instructions to <a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio">install with R Studio</a></li>
+<li>I also created with sample blog posts for hints on syntax &amp; then deleted these later</li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li>Edit config.toml</li>
+</ol>
+<ul>
+<li>Add: <code>publishDir = &quot;&quot;</code></li>
+<li>Change the path for you <code>publishDir</code> variable to the locally cloned .github.io repo. This should be an absolute path or relative to the config.toml file the variable is included in.<br />
+</li>
+<li>This variable publishes the static site contents to the .gihub.io repo so github static host it.</li>
+</ul>
+<p><code>blogdown::new_post(title = &quot;Welcome to my site&quot;, ext = &quot;.Rmd&quot;)</code></p>
+<ol start="9" style="list-style-type: decimal">
+<li>With the Academic theme, I had to remove <code>hero.md</code> from the following location: blogdown &gt; Content &gt; Home</li>
+</ol>
+<ul>
+<li>This was the theme resources and description that loads at the top of your site otherwise.</li>
+</ul>
+</div>
+</div>
+<div id="references-further-reading" class="section level2">
+<h2>References &amp; Further Reading</h2>
+<ul>
+<li><a href="https://tclavelle.github.io/blog/blogdown_github/">Excellent write-up from Tyler Clavelle</a></li>
+</ul>
+</div>
+<div id="session-info" class="section level2">
+<h2>Session Info</h2>
+<pre class="r"><code>devtools::session_info()
+## Session info -------------------------------------------------------------
+##  setting  value                       
+##  version  R version 3.4.3 (2017-11-30)
+##  system   x86_64, darwin15.6.0        
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  tz       America/New_York            
+##  date     2018-10-28
+## Packages -----------------------------------------------------------------
+##  package   * version date       source        
+##  backports   1.1.2   2017-12-13 CRAN (R 3.4.3)
+##  base      * 3.4.3   2017-12-07 local         
+##  blogdown    0.4     2017-12-12 CRAN (R 3.4.3)
+##  bookdown    0.5     2017-08-20 CRAN (R 3.4.1)
+##  compiler    3.4.3   2017-12-07 local         
+##  datasets  * 3.4.3   2017-12-07 local         
+##  devtools    1.13.4  2017-11-09 CRAN (R 3.4.2)
+##  digest      0.6.13  2017-12-14 CRAN (R 3.4.3)
+##  evaluate    0.10.1  2017-06-24 CRAN (R 3.4.1)
+##  graphics  * 3.4.3   2017-12-07 local         
+##  grDevices * 3.4.3   2017-12-07 local         
+##  htmltools   0.3.6   2017-04-28 CRAN (R 3.4.0)
+##  knitr       1.17    2017-08-10 CRAN (R 3.4.1)
+##  magrittr    1.5     2014-11-22 CRAN (R 3.4.0)
+##  memoise     1.1.0   2017-04-21 CRAN (R 3.4.0)
+##  methods   * 3.4.3   2017-12-07 local         
+##  Rcpp        0.12.14 2017-11-23 CRAN (R 3.4.3)
+##  rmarkdown   1.8     2017-11-17 CRAN (R 3.4.2)
+##  rprojroot   1.3-1   2017-12-18 CRAN (R 3.4.3)
+##  stats     * 3.4.3   2017-12-07 local         
+##  stringi     1.1.6   2017-11-17 CRAN (R 3.4.2)
+##  stringr     1.2.0   2017-02-18 CRAN (R 3.4.0)
+##  tools       3.4.3   2017-12-07 local         
+##  utils     * 3.4.3   2017-12-07 local         
+##  withr       2.1.1   2017-12-19 CRAN (R 3.4.3)
+##  yaml        2.1.16  2017-12-12 CRAN (R 3.4.3)</code></pre>
+</div>

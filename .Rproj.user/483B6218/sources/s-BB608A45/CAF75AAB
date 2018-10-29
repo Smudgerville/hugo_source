@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1517965526846.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CAF75AAB",
+    "lastKnownWriteTime" : 1517966780,
+    "last_content_update" : 1517966780995,
+    "path" : "/Volumes/RMS/Website/hugo_source/Hugo_Site/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "230,1",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

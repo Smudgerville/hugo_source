@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1517967158155.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1B7276EC",
+    "lastKnownWriteTime" : 1518278376,
+    "last_content_update" : 1518278376,
+    "path" : "/Volumes/RMS/Website/hugo_source/Hugo_Site/content/post/2018-02-07-getting-started-with-hugo.Rmd",
+    "project_path" : "content/post/2018-02-07-getting-started-with-hugo.Rmd",
+    "properties" : {
+        "cursorPosition" : "68,94",
+        "last_setup_crc32" : "",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
