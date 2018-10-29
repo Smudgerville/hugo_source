@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Richard M. Smith, CPA, CFA</title>
-    <link>https://smudgerville.github.io/post/</link>
+    <link>https://richardmichaelsmith.com/post/</link>
     <description>Recent content in Posts on Richard M. Smith, CPA, CFA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Getting Started with Hugo &amp; R</title>
-      <link>https://smudgerville.github.io/post/2018-02-07-getting-started-with-hugo/</link>
+      <link>https://richardmichaelsmith.com/post/2018-02-07-getting-started-with-hugo/</link>
       <pubDate>Wed, 07 Feb 2018 21:13:14 -0500</pubDate>
       
-      <guid>https://smudgerville.github.io/post/2018-02-07-getting-started-with-hugo/</guid>
+      <guid>https://richardmichaelsmith.com/post/2018-02-07-getting-started-with-hugo/</guid>
       <description>&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The aim of this post is to describe how to get up and running with a static site using &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;Blogdown&lt;/a&gt; and &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;. All of these tools make it fantastically easy to build a quality website quickly and easily.&lt;/p&gt;
@@ -142,10 +142,10 @@
     
     <item>
       <title>Welcome!</title>
-      <link>https://smudgerville.github.io/post/2018-02-06-welcome/</link>
+      <link>https://richardmichaelsmith.com/post/2018-02-06-welcome/</link>
       <pubDate>Tue, 06 Feb 2018 21:13:14 -0500</pubDate>
       
-      <guid>https://smudgerville.github.io/post/2018-02-06-welcome/</guid>
+      <guid>https://richardmichaelsmith.com/post/2018-02-06-welcome/</guid>
       <description>&lt;div id=&#34;welcome&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Welcome&lt;/h2&gt;
 &lt;p&gt;This is my github hosted static site.&lt;/p&gt;
