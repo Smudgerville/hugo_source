@@ -180,13 +180,14 @@
       <pubDate>Tue, 06 Feb 2018 21:13:14 -0500</pubDate>
       
       <guid>/post/2018-02-06-welcome/</guid>
-      <description>&lt;div id=&#34;welcome&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Welcome&lt;/h2&gt;
-&lt;p&gt;This is my github hosted static site.&lt;/p&gt;
-&lt;p&gt;The goal is to share resources and learning publicly.&lt;/p&gt;
-&lt;p&gt;Highlight &lt;a href=&#34;https://twitter.com/drob&#34;&gt;David Robinson&lt;/a&gt; &lt;a href=&#34;http://varianceexplained.org/r/start-blog/&#34;&gt;post&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;After teaching, made me realize that sharing publicly holds me to a higher standard.&lt;/p&gt;
-&lt;p&gt;Areas mainly focused on statistical analysis &amp;amp; forecasting with R.&lt;/p&gt;
+      <description>&lt;div id=&#34;hello-world&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Hello, World!&lt;/h2&gt;
+&lt;p&gt;Welcome to the site. This isn’t intended to be anything too formal but rather a place to share resources and learn publicly.&lt;/p&gt;
+&lt;p&gt;For many years, I have tried my best to organize my thoughts, notes, and learning in various ways. Unsurprisingly, most of these efforts have remained untouched since the day I made them. Mostly inspired by an excellent &lt;a href=&#34;http://varianceexplained.org/r/start-blog/&#34;&gt;post&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/drob&#34;&gt;David Robinson&lt;/a&gt;, I hope to hold myself to a slightly higher standard of organization and quality by making more things public.&lt;/p&gt;
+&lt;p&gt;One point that I’d like to note up front is that my goal in adding content here is not to write about areas or topics with which I feel comfortable. I’d really like to &lt;em&gt;learn out loud&lt;/em&gt; so to speak by describing topics and areas I’m discovering. As always though, there is an exception…&lt;/p&gt;
+&lt;p&gt;One area that I have spent a good amount of time in my professional life that I do aim to write about is Time Series Forecasting. I recently lectured at a local university and while I felt that I had a good understanding of the subject personally, I frequently felt that I did a poor job of conveying this to others. I do feel that this is an area where simple and clear resources will be helpful but I will also likely be irked by my inability to communicate these concepts until I more clearly outline my thoughts!&lt;/p&gt;
+&lt;p&gt;At the time of writing, my work and interests focus on forecasting, analytics and statistical methods with a focus on the energy industry. I anticipate that content will likely align with these broad topics but I’ll see where the learning takes me!&lt;/p&gt;
+&lt;p&gt;Please don’t hesitate to &lt;a href=&#34;../#contact&#34;&gt;contact me&lt;/a&gt; with any questions, thoughts or comments.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

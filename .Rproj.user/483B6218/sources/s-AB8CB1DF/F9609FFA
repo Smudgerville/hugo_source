@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540776948187.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1542943790",
+    "id" : "F9609FFA",
+    "lastKnownWriteTime" : 1517961918,
+    "last_content_update" : 1517961918,
+    "path" : "/Volumes/RMS/Website/hugo_source/Hugo_Site/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
